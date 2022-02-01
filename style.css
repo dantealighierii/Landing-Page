@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	text-decoration: none;
 }
 
 body {
@@ -12,13 +13,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #eee;
+    background: linear-gradient(243.23deg, rgba(250, 0, 255, 0.2) 2.31%, rgba(43, 35, 58, 0.2) 50.43%, rgba(68, 15, 154, 0.2) 95.35%), #3B2A5F;
 }
 
 .header-drop {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 52px;
+    height: 52px;
+	background: rgba(255,255,255,0.5);
     box-shadow: inset 10px 10px 10px rgba(0,0,0,0.05),
     15px 25px 10px rgba(0,0,0,0.05),
     15px 20px 20px rgba(0,0,0,0.05),
