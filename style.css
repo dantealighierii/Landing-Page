@@ -1,100 +1,104 @@
 /* importing fonts: Source Code Pro(monospace) and Pushster(cursive)*/
-@import url('https://fonts.googleapis.com/css2?family=Pushster&family=Source+Code+Pro:ital,wght@0,200;1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pushster&family=Source+Code+Pro:ital,wght@0,200;1,200&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-	text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(243.23deg, rgba(250, 0, 255, 0.2) 2.31%, rgba(43, 35, 58, 0.2) 50.43%, rgba(68, 15, 154, 0.2) 95.35%), #3B2A5F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+      243.23deg,
+      rgba(250, 0, 255, 0.2) 2.31%,
+      rgba(43, 35, 58, 0.2) 50.43%,
+      rgba(68, 15, 154, 0.2) 95.35%
+    ),
+    #3b2a5f;
 }
 
 .header-drop {
-    position: relative;
-    width: 52px;
-    height: 52px;
-	background: rgba(255,255,255,0.5);
-    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.05),
-    15px 25px 10px rgba(0,0,0,0.05),
-    15px 20px 20px rgba(0,0,0,0.05),
-    inset -10px -10px 15px rgba(255,255,255,0.9);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 52px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
+    15px 25px 10px rgba(0, 0, 0, 0.05), 15px 20px 20px rgba(0, 0, 0, 0.05),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-drop::before {
-    content: '';
-    position: absolute;
-    top: 35px;
-    left: 25px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #fff;
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
 }
 
 .header-drop::after {
-    content: '';
-    position: absolute;
-    top: 25px;
-    left: 50px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #fff;
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
 }
 
 .header-drop ion-icon {
-    font-size: 5em;
-    color: #444;
+  font-size: 5em;
+  color: #444;
 }
 
 .footer-drop {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.05),
-    15px 25px 10px rgba(0,0,0,0.05),
-    15px 20px 20px rgba(0,0,0,0.05),
-    inset -10px -10px 15px rgba(255,255,255,0.9);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
+    15px 25px 10px rgba(0, 0, 0, 0.05), 15px 20px 20px rgba(0, 0, 0, 0.05),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-drop::before {
-    content: '';
-    position: absolute;
-    top: 35px;
-    left: 25px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #fff;
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
 }
 
 .footer-drop::after {
-    content: '';
-    position: absolute;
-    top: 25px;
-    left: 50px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #fff;
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
 }
 
 .footer-drop ion-icon {
-    font-size: 5em;
-    color: #444;
+  font-size: 5em;
+  color: #444;
 }
