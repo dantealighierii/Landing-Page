@@ -1,5 +1,5 @@
 /* importing fonts: Source Code Pro(monospace) and Pushster(cursive)*/
-@import url("https://fonts.googleapis.com/css2?family=Pushster&family=Source+Code+Pro:ital,wght@0,200;1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Puritan&family=Source+Code+Pro:ital,wght@0,200;0,300;1,200&display=swap');
 
 * {
   margin: 0;
@@ -9,7 +9,8 @@
 }
 
 body {
-  display: flex;
+  font-size: 100%;
+  display: block;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -22,15 +23,39 @@ body {
     #3b2a5f;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 155px;
+}
+
+.header-menu {
+  width: 200;
+  height: 20;
+
+  font-family: "Puritan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: #e6def0;
+}
+
 .header-drop {
   position: relative;
-  width: 52px;
-  height: 52px;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
     15px 25px 10px rgba(0, 0, 0, 0.05), 15px 20px 20px rgba(0, 0, 0, 0.05),
     inset -10px -10px 15px rgba(255, 255, 255, 0.9);
   border-radius: 50%;
+  object-fit: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,10 +64,10 @@ body {
 .header-drop::before {
   content: "";
   position: absolute;
-  top: 35px;
-  left: 25px;
-  width: 20px;
-  height: 20px;
+  top: 9px;
+  left: 5px;
+  width: 5.5px;
+  height: 5.5px;
   border-radius: 50%;
   background: #fff;
 }
@@ -50,55 +75,15 @@ body {
 .header-drop::after {
   content: "";
   position: absolute;
-  top: 25px;
-  left: 50px;
-  width: 10px;
-  height: 10px;
+  top: 6px;
+  left: 12px;
+  width: 3.5px;
+  height: 3.5px;
   border-radius: 50%;
   background: #fff;
 }
 
 .header-drop ion-icon {
-  font-size: 5em;
-  color: #444;
-}
-
-.footer-drop {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
-    15px 25px 10px rgba(0, 0, 0, 0.05), 15px 20px 20px rgba(0, 0, 0, 0.05),
-    inset -10px -10px 15px rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-drop::before {
-  content: "";
-  position: absolute;
-  top: 35px;
-  left: 25px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #fff;
-}
-
-.footer-drop::after {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 50px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #fff;
-}
-
-.footer-drop ion-icon {
-  font-size: 5em;
+  font-size: 1.25em;
   color: #444;
 }
