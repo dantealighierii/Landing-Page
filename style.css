@@ -32,7 +32,7 @@ body {
   padding: 10px 0px;
 }
 
-.header-border {  
+.header-border {
   position: absolute;
   width: 100%;
   height: 66px;
@@ -42,7 +42,7 @@ body {
   --bs: 10px;
   --bbs: 10px;
   --ss: 4px;
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -52,9 +52,9 @@ body {
   border: var(--bs) solid rgb(64, 52, 66);
   border-right-color: #645979;
   border-right-width: var(--bbs);
-  border-bottom-color: #4C3F68;
+  border-bottom-color: #4c3f68;
   border-bottom-width: var(--bbs);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   filter: blur(4px);
   z-index: -1;
 }
