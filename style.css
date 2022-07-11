@@ -29,7 +29,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 155px;
+  padding: 10px 0px;
 }
 
 .header-border {  
@@ -40,7 +40,7 @@ body {
 
 .header-border:before {
   --bs: 10px;
-  --bbs: 16px;
+  --bbs: 10px;
   --ss: 4px;
   content: '';
   position: absolute;
@@ -50,9 +50,11 @@ body {
   height: calc(100% - var(--bs) - var(--bbs) - var(--ss));
   background: #645979;
   border: var(--bs) solid rgb(64, 52, 66);
+  border-right-color: #645979;
+  border-right-width: var(--bbs);
   border-bottom-color: #4C3F68;
   border-bottom-width: var(--bbs);
-  box-shadow: 0 var(--ss) rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
   filter: blur(4px);
   z-index: -1;
 }
@@ -61,6 +63,7 @@ body {
   position: relative;
   width: 36px;
   height: 36px;
+  left: 155px;
   min-width: 36px;
   min-height: 36px;
   background: rgba(255, 255, 255, 0.5);
@@ -68,7 +71,6 @@ body {
     15px 25px 10px rgba(0, 0, 0, 0.05), 15px 20px 20px rgba(0, 0, 0, 0.05),
     inset -10px -10px 15px rgba(255, 255, 255, 0.9);
   border-radius: 50%;
-  object-fit: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,6 +106,7 @@ body {
 .header-menu {
   display: flex;
   gap: 74px;
+  padding-right: 155px;
   font-family: "Puritan";
   font-style: normal;
   font-weight: 400;
